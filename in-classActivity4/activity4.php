@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <title>Java Jam Coffee House</title>
-  <meta name="description" content="CENG 311 Inclass Activity 1" />
+  <meta name="description" content="CENG 311 Inclass Activity 4" />
 </head>
 
 <body>
@@ -12,18 +12,18 @@
 <?php
   $currencies = array("USD" => 1, "CAD" => 1.35, "EUR" => 0.92);
 
-  $from_value = "";  // Initialize to empty string
-  $to_value = "";    // Initialize to empty string
+  $from_value = ""; 
+  $to_value = "";    
 
-  // Check if values are set in the URL parameters (GET method)
+  
   if (isset($_GET["from_value"]) && isset($_GET["to_value"])) {
     $from_currency = $_GET["from_currencies"];
     $to_currency = $_GET["to_currencies"];
     $amount = floatval($_GET["from_value"]);
     $result = $amount * ($currencies[$to_currency] / $currencies[$from_currency]);
 
-    $from_value = $amount;  // Update for pre-populating
-    $to_value = $result;    // Update for pre-populating
+    $from_value = $amount;
+    $to_value = $result;    
   }
 ?>
 
