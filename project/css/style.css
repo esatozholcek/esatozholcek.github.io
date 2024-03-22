@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  background-color: #4caf50;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* sets min page height to viewport height */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  
+  
+  height: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  height: 60px;
+  margin-top: 75px;
+  margin-bottom: auto; /* Pushes the footer to the bottom of the page */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header img {
+  max-width: 170px; /* Adjust the max-width according to your design */
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  padding: 8px 16px;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.menu {
+  padding: 20px 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.menu li {
+  height: fit-content;
+}
+
+.menu div {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #555;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 5px;
+}
+
+.menu .active {
+  background-color: #504CAF;
+  color: white;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  background-color: #fff;
+  color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.about, .services {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.about h2, .services h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about p, .services p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.about .btn, .services .btn {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.about .btn:hover, .services .btn:hover {
+  background-color: #45a049;
+}
+
+/* Donation */
+.donation-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.donation-box {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.donation-box .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.donation-box .fields input {
+  width: calc(50% - 10px);
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-box .amount {
+  margin-top: 20px;
+}
+
+.donation-box .amount .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.donation-box .amount .button:last-child {
+  margin-right: 0;
+}
+
+.donation-box .amount .set-amount {
+  width: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.donation-box .switch {
+  margin-top: 20px;
+}
+
+.donation-box .checkboxes {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.donation-box .checkboxes input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.donation-box .donate-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* lasDonation */
+
+.donor-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.donor-list {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.donor-list .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.donor-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.donor-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.donor-list li:last-child {
+  border-bottom: none;
+}
+
+.donor-list li span {
+  font-weight: bold;
+  color: #555;
+}
+
+.donor-list li span.name {
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.box {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* login */
+/* Additional styles specific to this page can be added here */
+.login-container {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.login-box .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-box .input-field {
+  margin-bottom: 20px;
+}
+
+.login-box .input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box .submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Additional styles specific to this page can be added here */
+.submit-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-btn a {
+  display: inline-block;
+  padding: 12px 24px; /* Adjust the padding as needed */
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.submit-btn a:hover {
+  background-color: #45a049;
+}
+
+
+
+
