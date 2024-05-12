@@ -7,12 +7,12 @@
 
 .header {
   background-color: #4caf50;
-  padding: 20px 0;
   text-align: center;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
 }
 
 /* sets min page height to viewport height */
@@ -21,8 +21,6 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  
-  
   height: 100%;
   min-height: 100vh;
 }
@@ -31,6 +29,17 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.box {
+  min-height: 417px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
@@ -47,6 +56,8 @@ footer {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .header img {
@@ -68,11 +79,6 @@ a {
   text-decoration: none;
   display: inline;
   padding: 8px 16px;
-}
-
-.active {
-  background-color: #4caf50;
-  color: white;
 }
 
 .menu {
@@ -188,8 +194,38 @@ a {
   background-color: #45a049;
 }
 
-/* Donation */
-.donation-container {
+/* --------------  Donation  ------------ */
+
+
+
+.input-group label {
+  padding-bottom: 10px;
+  display: block;
+}
+
+.tabs li {
+  display: inline;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.tabs li.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.tabs li:hover {
+  background-color: #ddd;
+}
+
+.tabs ul {
+  margin-bottom: 15px;
+}
+
+/* .donation-container {
   text-align: center;
   padding: 50px 0;
 }
@@ -204,6 +240,7 @@ a {
   margin-bottom: 60px;
 }
 
+
 .donation-box .title {
   font-size: 24px;
   margin-bottom: 20px;
@@ -216,48 +253,10 @@ a {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-}
+} */
 
-.donation-box .amount {
-  margin-top: 20px;
-}
 
-.donation-box .amount .button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  margin-right: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.donation-box .amount .button:last-child {
-  margin-right: 0;
-}
-
-.donation-box .amount .set-amount {
-  width: 100px;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.donation-box .switch {
-  margin-top: 20px;
-}
-
-.donation-box .checkboxes {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.donation-box .checkboxes input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.donation-box .donate-button {
+/* .donation-box .donate-button {
   background-color: #4caf50;
   color: white;
   padding: 15px 30px;
@@ -265,6 +264,16 @@ a {
   margin-top: 20px;
   cursor: pointer;
   display: inline-block;
+} */
+
+.number-input {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 /* lasDonation */
@@ -324,22 +333,11 @@ h2 {
   text-align: center;
 }
 
-.box {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-}
+
 
 /* login */
 /* Additional styles specific to this page can be added here */
-.login-container {
-  text-align: center;
-  padding: 50px 0;
-}
+
 
 .login-box {
   max-width: 400px;
@@ -350,23 +348,6 @@ h2 {
   padding: 30px;
 }
 
-.login-box .title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.login-box .input-field {
-  margin-bottom: 20px;
-}
-
-.login-box .input-field input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 .login-box .submit-btn {
   background-color: #4caf50;
   color: white;
@@ -375,27 +356,143 @@ h2 {
   cursor: pointer;
 }
 
-/* Additional styles specific to this page can be added here */
+#login-btn {
+  width: 100%;
+}
+
+
+/* Contact */
 .submit-btn {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 
-.submit-btn a {
+.transition-group input,
+.transition-group textarea {
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  padding: 0.8em;
+  /* margin-bottom: 12px; */
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
   display: inline-block;
-  padding: 12px 24px; /* Adjust the padding as needed */
-  background-color: #4caf50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  font-size: 16px; /* Adjust the font size as needed */
+  position: relative;
+  outline: none;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.submit-btn a:hover {
+.transition-group {
+  position: relative;
+  margin-bottom:15px;
+}
+
+.transition-group label {
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.2em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+  z-index: 1;
+}
+
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.input:focus, .input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+}
+
+/* .user-label {
+  left: 15px;
+  color: #e8e8e8;
+  transform: translateX(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.input:focus ~ .transition-label, .input:valid ~ .transition-label{
+  transform: translateY(-50%) scale(0.8);
+  background-color: #ffffff;
+  padding: 0.4em;
+  margin: 0;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.submit-btn:hover {
   background-color: #45a049;
 }
 
 
+/* --------- Slick Slider */
+
+.carousel {
+  margin: 0px auto;
+  padding: 25px 0px;
+  background-color: #f4f4f4;
+}
+
+.slick-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slick-carousel div {
+  text-align: center;
+}
+
+.slick-carousel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slick-carousel p {
+  font-size: 18px;
+  margin-top: 20px;
+}
 
 
+.slick-prev:before,
+.slick-next:before {
+  color: #000000; 
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+.slick-dots li button:before {
+  color: #000000;
+  font-size: 10px;
+}
+
+
+/* ------ Select2 */
+
+.select2-container--default .select2-results__option {
+  display: block;
+  padding: 6px 12px; 
+}
+
+.select2-container {
+  padding-bottom: 10px;
+}
+
+#plant-place {
+  display: block;
+  padding-bottom: 10px;
+}

@@ -7,32 +7,34 @@ for users login to their account and redirect to home page  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo.png">
     <style>
        
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="row">
             <img src="../images/logo.png" alt="Logo">
         </div>
     </header>
 
-    <div class="login-container">
+    <div class="container">
         <div class="login-box">
-            <div class="title">Login</div>
+            <form action="index.html">
+                <h2>Login</h2>
 
-            <div class="input-field">
-                <input type="text" id="username" placeholder="Username">
-            </div>
+                <div class="transition-group">
+                    <input class="input" type="text" id="username" required>
+                    <label class="transition-label" for="">Username</label>
+                </div>
 
-            <div class="input-field">
-                <input type="password" id="password" placeholder="Password">
-            </div>
-
-            <div class="submit-btn">
-              <a href="index.html">Login</a>
-          </div>
+                <div class="transition-group">
+                    <input class="input" type="password" id="password" required>
+                    <label class="transition-label" for="">Password</label>
+                </div>
+                <button class="submit-btn" id="login-btn" type="submit">Login</button>
+            </form>
         </div>
     </div>
 

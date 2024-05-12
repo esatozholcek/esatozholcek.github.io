@@ -1,20 +1,24 @@
-<!-- Home Page
-    this page will include information about website and activities  -->
-    
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/style.css">
+    
     <link rel="icon" href="../images/logo.png">
 
+    
+    <!-- Slick jquery plugin -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../js/slick.js"></script>
       
 </head>
 <body>
     <header class="header">
-        <div class="container">
             <div class="row">
                 <div>
                     <a href="../pages/" class="logo">
@@ -24,8 +28,9 @@
                 <nav class="menu">
                     <ul>
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="Donation.html">Donate Now</a></li>
+                        <li><a href="donation.html">Donation</a></li>
                         <li><a href="lastDonation.html">Last Donations</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -34,14 +39,28 @@
                     </ul>
                 </nav>
             </div>
-        </div>
     </header>
+
+    <!-- Slick jquery plugin -->
+    <section class="carousel">
+        <div class="slick-carousel">
+            <div>
+                <img src="../images/temp.png" alt="">
+                <p>Tree planting project in Hatay</p>
+            </div>
+            <div>
+                <img src="../images/temp2.jpg" alt="">
+                <p>Reforestation project in Gaziantep</p>
+            </div>
+        </div>
+    </section>
 
     <section class="hero">
         <div class="container">
             <h1>Support Our Tree Planting Efforts</h1>
             <p>Your donations help us plant trees and preserve our environment for future generations.</p>
-            <button onclick="location.href='Donation.html'">Donate Now</button>        </div>
+            <button>Donate Now</button>
+        </div>
     </section>
 
     <section class="about">
