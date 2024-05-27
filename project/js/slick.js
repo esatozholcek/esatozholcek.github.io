@@ -10,4 +10,10 @@ $(document).ready(function() {
         slidesToScroll: 1
     });
 
+    donateBtn = document.getElementById('donateBtn');
+    // onclick event for link to donation.html
+    donateBtn.onclick = function() {
+        window.location.href = 'pages/donation.html';
+    };
+
 });

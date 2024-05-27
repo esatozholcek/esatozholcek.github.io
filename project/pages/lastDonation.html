@@ -7,23 +7,21 @@ this page shows the last donators name and amount of donation -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Last Donations</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../images/logo.png">
-    <style>
-        /* Additional styles specific to this page can be added here */
-       
-    </style>
+    <link rel="icon" href="../images/logo.svg">
+    <script src="../js/responsive.js"></script>
+
 </head>
 <body>
     <header class="header">
             <div class="row">
                 <div>
-                    <a href="index.html" class="logo">
-                        <img src="../images/logo.png" alt="">
+                    <a href="../index.html" class="logo">
+                        <img src="../images/logo.svg" class="logo-img" alt="">
                     </a>
                 </div>
-                <nav class="menu container">
+                <nav class="menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="../index.html">Home</a></li>
                         <li><a href="donation.html">Donation</a> </li>
                         <li><a href="lastDonation.html" class="active">Last Donations</a></li>
                         <li><a href="faq.html">FAQ</a></li>
@@ -31,16 +29,17 @@ this page shows the last donators name and amount of donation -->
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                     <ul><li><a href="login.html" class="login">Login</a></li></ul>
-                    <!-- <div class="container"><a href="login.html" class="login">Login</a> -->
-                    </div>
                 </nav>
+                <div id="weather-container" class="weather-info">
+                    <!-- Weather data will be loaded here -->
+                </div>
                 
             </div>
     </header>
 
     <div class="donor-container">
-        <div class="donor-list">
-            <div class="title">List of Donors</div>
+        <div class="donor-list box">
+            <h2>List of Last Donations</h2>
             <ul>
                 <li><span class="name">Yahya Elimam</span><span>$50</span></li>
                 <li><span class="name">Mahmut Esat Özhölçek</span><span>$45</span></li>

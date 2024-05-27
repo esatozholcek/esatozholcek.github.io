@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+    <link rel="icon" href="images/logo.svg">
+
+    
+    <!-- Slick jquery plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/responsive.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/ajax.js"></script>
+      
+</head>
+<body>
+    <header class="header">
+            <div class="row">
+                <div>
+                    <a href="">
+                        <img src="images/logo.svg" class="logo-img">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="pages/donation.html">Donation</a></li>
+                        <li><a href="pages/lastDonation.html">Last Donations</a></li>
+                        <li><a href="pages/faq.html">FAQ</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>                    
+                    <ul>
+                        <li><a href="pages/login.html" class="login">Login</a></li>
+                    </ul>
+                </nav>
+                <div id="weather-container" class="weather-info">
+                    <!-- Weather data will be loaded here -->
+                </div>
+            </div>
+    </header>
+
+    <div class="container">
+         <!-- Slick jquery plugin -->
+        <section class="carousel">
+            <div class="slick-carousel">
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="container">
+                <h1>Support Our Tree Planting Efforts</h1>
+                <p>Your donations help us plant trees and preserve our environment for future generations.</p>
+                <button id="donateBtn">Donate Now</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Why Plant Trees?</h2>
+                <p>Planting trees is vital for combating climate change, preserving biodiversity, and providing sustainable livelihoods. Learn more about the benefits of tree planting.</p>
+                <a href="pages/about.html" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Our Tree Planting Projects</h2>
+                <a href="pages/lastDonation.html" class="btn">View Projects</a>
+            </div>
+        </section>
+    </div>
+   
+    
+
+
+    <!-- Other sections can be added here -->
+
+    <footer>
+        <div class="container" >
+            <p>&copy; Aybu ceng-gang</p>
+        </div>
+    </footer>
+</body>
+</html>
